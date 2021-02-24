@@ -133,5 +133,45 @@ $ roslaunch scout_bringup scout_minimal.launch
 $ roslaunch scout_bringup scout_teleop_keyboard.launch
 ```
 
+위 메뉴얼의 원본 >> https://github.com/agilexrobotics/scout_ros
+
+
+# REMOTE PC에서 SCOUT과 직접 연결된 PC조작 방법
+
+1. REMOTE PC의 bashrc 에서 ROS_HOSTNAME, ROS_MASTER_URI를 remote ip로 변경하기
+
+2. SCOUT과 직접 연결된 PC의 bashrc에서 ROS_HOSTNAME은  remote ip로, ROS_MASTER_URI는 SCOUT과 직접 연결된 PC의 ip로 변경하기
+
+3. roscore 실행
+
+   ```
+   $ roscore
+   ```
+
+4. scout과 직접 연결된 PC(rilab-02)에 원격접속
+
+   ```
+   $ ssh rilab-02@{scout연결된PC ip}
+   ```
+
+   원격 접속한 터미널 창에서 실행
+
+   ```
+   $ sudo ip link set can0 up type can bitrate 500000
+   ```
+
+   ```
+   $ roslaunch scout_bringup scout_minimal.launch
+   ```
+
+5. REMOTE PC터미널 창에서 조종 명령어 실행
+
+   ```
+   $ roslaunch scout_bringup scout_teleop_keyboard.launch
+   ```
+
+   
+
+위 과정을 하기 위해선 로봇과 컨트롤러의 전원이 켜지고 로봇과 누크(작은 PC)가 연결되어 있어야 합니다.
 
 
