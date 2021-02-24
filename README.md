@@ -1,5 +1,5 @@
 # SCOUT_V2
-## SCOUT V2 menual
+## SCOUT V2 설정 방법 menual 
 
 
 
