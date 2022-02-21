@@ -151,7 +151,7 @@ $ roslaunch scout_bringup scout_teleop_keyboard.launch
 4. scout과 직접 연결된 PC(rilab-02)에 원격접속
 
    ```
-   $ ssh rilab-02@{scout연결된PC ip}
+   $ ssh scout@{scout연결된PC ip}
    ```
 
    원격 접속한 터미널 창에서 실행
