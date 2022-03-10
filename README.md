@@ -165,7 +165,7 @@ $ roslaunch scout_bringup scout_teleop_keyboard.launch
    $ roslaunch scout_bringup scout_mini_robot_base.launch
    ```
 
-5. REMOTE PC터미널 창에서 조종 명령어 실행
+5. REMOTE PC터미널 창에서 조종 명령어 실행 (현재 ssh 터미널에서 실행해야 가능함)
 
    ```
    $ roslaunch scout_bringup scout_teleop_keyboard.launch
