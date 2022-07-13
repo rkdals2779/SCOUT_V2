@@ -142,7 +142,7 @@ $ roslaunch scout_bringup scout_teleop_keyboard.launch
 
 2. SCOUT과 직접 연결된 PC의 bashrc에서 ROS_MASTER_URI는 remote ip로, ROS_HOSTNAME은은 SCOUT과 직접 연결된 PC의 ip로 변경하기
 
-3. roscore 실행
+3. roscore 실행(Master pc 터미널에서)
 
    ```
    $ roscore
@@ -155,7 +155,7 @@ $ roslaunch scout_bringup scout_teleop_keyboard.launch
    만약 연결이 안된다면 scout pc를 재부팅 해보기
    ```
 
-   원격 접속한 터미널 창에서 실행
+   원격 접속한 Robot pc터미널 창에서 실행
 
    ```
    $ sudo ip link set can0 up type can bitrate 500000
