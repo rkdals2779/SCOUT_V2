@@ -8,9 +8,8 @@
 1. Install dependent ROS packages
 
 ```
-$ sudo apt install ros-melodic-teleop-twist-keyboard
-$ sudo apt-get install ros-melodic-joint-state-publisher-gui
-$ sudo apt install ros-melodic-ros-controllers
+$ sudo apt install -y libasio-dev
+$ sudo apt install -y ros-$ROS_DISTRO-teleop-twist-keyboard
 ```
 
 Change ros-melodic-* in the command to ros-kinetic-* if you're using ROS Kinetic.
@@ -19,8 +18,8 @@ Change ros-melodic-* in the command to ros-kinetic-* if you're using ROS Kinetic
 
 ```
 $ cd ~/catkin_ws/src
-$ git clone -b scout_v2 --depth 1 https://github.com/agilexrobotics/scout_ros.git	
-$ git clone -b scout_v2 --depth 1 https://github.com/agilexrobotics/agx_sdk.git
+$ git clone https://github.com/agilexrobotics/ugv_sdk.git  
+$ git clone https://github.com/agilexrobotics/scout_ros.git
 $ cd ..
 $ catkin_make
 ```
